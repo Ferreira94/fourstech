@@ -1,3 +1,6 @@
+import About from '@/components/About';
+import Header from '@/components/Header';
+import Introduction from '@/components/Introduction';
 import Head from 'next/head';
 
 export default function Home() {
@@ -10,9 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <h2>Home</h2>
-      </div>
+      <main className="bg-backgroundImg bg-cover bg-center bg-no-repeat w-screen h-full fixed">
+        <Header />
+        <Introduction />
+        <About />
+      </main>
     </>
   );
 }

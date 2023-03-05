@@ -6,10 +6,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-backgroundAbout bg-no-repeat bg-cover relative flex items-center justify-center lg:px-20 md:px-10 px-4"
+      className="w-full bg-backgroundAbout bg-no-repeat bg-cover relative"
     >
-      <div className="flex items-center max-w-[1440px]">
-        <div className="w-[50%] flex flex-col gap-4 leading-6 max-w-[400px]">
+      <div className="flex lg:flex-row flex-col lg:px-20 md:px-10 px-4 items-center max-w-[1440px]">
+        <div className="lg:w-[50%] flex flex-col gap-4 leading-6 max-w-[400px]">
           <h2 className="font-[Syncopate]">Quem somos</h2>
 
           <p className="text-lg">
@@ -25,7 +25,7 @@ export default function About() {
           </p>
         </div>
 
-        <Image className="h-[600px]" src={aboutImage} alt="" />
+        <Image className="h-[500px] w-[400]" src={aboutImage} alt="" />
       </div>
     </section>
   );

@@ -13,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-backgroundImg bg-cover bg-center bg-no-repeat w-screen h-full fixed">
+      <main className="flex flex-col items-center">
+        <div className="w-screen h-full bg-backgroundImg bg-cover bg-center bg-no-repeat fixed top-0" />
         <Header />
         <Introduction />
         <About />

@@ -1,14 +1,17 @@
-import logoImg from '@/assets/logo.svg';
 import Image from 'next/image';
+
+import logoImg from '@/assets/logo.svg';
 
 export default function Header() {
   return (
-    <header className="md:py-5 py-2 lg:px-20 md:px-10 px-4 w-screen flex justify-between items-center absolute">
-      <Image src={logoImg} alt="" className='md:w-[120px] w-[90px]' />
+    <header className="md:py-5 py-2 lg:px-20 md:px-10 px-4 w-full max-w-[1440px] flex justify-between items-center relative">
+      <Image src={logoImg} alt="" className="md:w-[120px] w-[90px]" />
 
       <div className="flex items-center text-sm font-bold gap-8 font-[Syncopate]">
         <nav className="gap-8 md:flex hidden">
-          <a className="hover:text-blue-500 cursor-pointer">Sobre</a>
+          <a href="#about" className="hover:text-blue-500 cursor-pointer">
+            Sobre
+          </a>
           <a className="hover:text-blue-500 cursor-pointer">Serviços</a>
           <a className="hover:text-blue-500 cursor-pointer">Projetos</a>
         </nav>

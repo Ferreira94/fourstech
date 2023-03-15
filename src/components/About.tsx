@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-backgroundAbout bg-no-repeat bg-cover relative"
+      className="w-screen max-w-full bg-backgroundAbout bg-no-repeat relative bg-cover flex justify-center"
     >
       <div className="flex lg:flex-row flex-col lg:px-20 md:px-10 px-4 items-center max-w-[1440px]">
         <div className="lg:w-[50%] flex flex-col gap-4 leading-6 max-w-[400px]">

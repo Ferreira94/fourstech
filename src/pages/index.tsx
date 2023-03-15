@@ -1,7 +1,9 @@
-import About from '@/components/About';
+import Head from 'next/head';
+
 import Header from '@/components/Header';
 import Introduction from '@/components/Introduction';
-import Head from 'next/head';
+import About from '@/components/About';
+import Service from '@/components/Services';
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
         <Header />
         <Introduction />
         <About />
+        <Service />
       </main>
     </>
   );
